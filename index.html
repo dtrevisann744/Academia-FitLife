@@ -4,60 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Academia | FitLife</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Academia FitLife</title>
 </head>
 <body>
     <header class="cabecalho">
-
         <div class="logo">
             Fit<span>Life</span>
         </div>
-    
         <div>
             <nav class="menu" id="menu">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Planos</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#planos">Planos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#dados">Dados</a></li>
                 </ul>
-            </nav> 
+            </nav>
         </div>
-    
     </header>
-
+ 
     <main>
         <section class="hero" id="home">
             <div class="hero-conteudo">
                 <h1>Transforme seu corpo e sua mente</h1>
-                <p>Treine com estrutura moderna com professores qualificados 
-                e planos que cabem no bolso.</p>
+                <p>Treine com uma estrutura moderna, com professores qualificados e planos que cabem no seu bolso.</p>
                 <a href="#planos" class="botao">Conhecer Planos</a>
             </div>
         </section>
-    </main>
-
-    <main>
+ 
         <section class="sobre">
             <h2>Por que escolher a FitLife?</h2>
-            <div class="beneficio">
-                <h3>Equipamentos modernos</h3>
-                <p>Aparelhos seguros e atualizados para todos os níveis de treino</p>
-            </div>
-
-            <div class="beneficio">
-                <h3>Professores preparados</h3>
-                <p>Acompanhamento para iniciantes, intermediários e avançados.</p>
-            </div>
-
-            <div class="beneficio">
-                <h3>Ambiente motivador</h3>
-                <p>Espaço moderno, limpo e organizado para você evoluir todos os dias.</p>
-            </div>
-
+            <section class="beneficios">
+                <div class="beneficio">
+                    <h3>Equipamentos modernos</h3>
+                    <p>Aparelhos seguros e atualizados para todos os níveis de treino.</p>
+                </div>
+                <div class="beneficio">
+                    <h3>Professores preparados</h3>
+                    <p>Acompanhamento para iniciantes, intermediários e avançados.</p>
+                </div>
+                <div class="beneficio">
+                    <h3>Ambiente motivador</h3>
+                    <p>Espaço moderno, limpo e organizado para você evoluir todos os dias.</p>
+                </div>
+            </section>
         </section>
+ 
+        <section class="planos" id="planos">
+            <h2>Planos da Academia</h2>
+            <div class="cards-planos">
+                <div class="plano">
+                    <h3>Plano Básico</h3>
+                    <p class="preco">R$ 79,90</p>
+                    <ul>
+                        <li>Acesso à musculação</li>
+                        <li>Avaliação inicial</li>
+                        <li>Treino básico com professor</li>
+                    </ul>
+                    <a href="#contato" class="botao">Escolher</a>
+                </div>
+ 
+                <div class="plano destaque">
+                    <h3>Plano Premium</h3>
+                    <p class="preco">R$ 119,90</p>
+                    <ul>
+                        <li>Acesso à musculação</li>
+                        <li>Acesso ao cardio</li>
+                        <li>Revisão de treino todo mês</li>
+                    </ul>
+                    <a href="#contato" class="botao">Escolher</a>
+                </div>
+ 
+                <div class="plano">
+                    <h3>Plano Black</h3>
+                    <p class="preco">R$ 159,90</p>
+                    <ul>
+                        <li>Acesso completo à academia</li>
+                        <li>Aulas funcionais inclusas</li>
+                        <li>Acompanhamento dos professores</li>
+                    </ul>
+                    <a href="#contato" class="botao">Escolher</a>
+                </div>
+            </div>
+        </section>
+ 
+        <section class="estrutura">
+            <h2>Estrutura da Academia</h2>
+            <table class="galeria-estrutura">
+                <tr>
+                    <td><img src="./src/musculacao.avif" alt="Area de musculacao da academia"></td>
+                    <td><img src="./src/cardio.avif" alt="Area de cardio da academia"></td>
+                    <td><img src="./src/funcional.avif" alt="Area funcional da academia"></td>
+                </tr>
+            </table>
+        </section>
+ 
+        <section class="dados" id="dados">
+            <h2>Dados do Cliente</h2>
+            <div class="dados-conteudo">
+                <form>
+                    <label for="nome">Nome completo</label>
+                    <input class="campo" type="text" id="nome" placeholder="Digite seu nome">
+ 
+                    <label for="telefone">Telefone</label>
+                    <input class="campo" type="tel" id="telefone" placeholder="Digite seu telefone">
+ 
+                    <label for="email">Email</label>
+                    <input class="campo" type="email" id="email" placeholder="Digite seu email">
+ 
+                    <label for="plano">Plano desejado</label>
+                    <select class="campo" id="plano">
+                        <option>Plano basico</option>
+                        <option>Plano Premium</option>
+                        <option>Plano Black</option>
+                    </select>
+ 
+                    <label for="objetivo">Objetivo</label>
+                    <textarea class="campo" id="objetivo"  placeholder="Exemplo: emagrecer, ganhar massa, melhorar a saúde"></textarea>
+ 
+                    <button type="submit" class="botao">Enviar dados</button>
+                </form>
+            </div>
+        </section>
+ 
+        <section class="contato" id="contato">
+            <h2>Entre em contato</h2>
+            <p>Fale com a FitLife e agende uma visita para conhecer nossa estrutura.</p>
+            <p><strong>Telefone:</strong> (11) 99999-0000</p>
+            <p><strong>Endereço:</strong> Av. Saúde e Movimento, 250</p>
+        </section>
+ 
+ 
     </main>
-
-
+ 
+    <footer>
+            <p>Academia FitLife - Treine melhor, viva melhor.</p>
+    </footer>
 </body>
 </html>
+ 
+ 
